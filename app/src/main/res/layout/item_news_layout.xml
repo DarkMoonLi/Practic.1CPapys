@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/purple_200"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#5E35B1"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:text="Пробный текст"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/item_annotation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/purple_200"
+            android:outlineProvider="none"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="20dp"
+            android:shadowColor="#5E35B1"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:singleLine="false"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textColor="#311B92"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:text="Описание"
+            tools:visibility="visible" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
