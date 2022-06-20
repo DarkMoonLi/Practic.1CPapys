@@ -2,11 +2,17 @@
     <string name="app_name">News Block</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label">Меню</string>
+    <string name="second_fragment_label">Новостной блок</string>
+    <string name="next">Вперед</string>
+    <string name="previous">Назад</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_first_fragment">Привет, нажми \"Вперед\", чтобы увидеть новости)</string>
+    <string name="hello_second_fragment">Новости</string>
+    <string name="refresh">Обновить</string>
+    <string name="textview">TextView</string>
+    <string name="data">Дата:</string>
+    <string name="type">Тип:</string>
+    <string name="annotation">Аннотация:</string>
+    <string name="link">Открыть в браузере</string>
 </resources>

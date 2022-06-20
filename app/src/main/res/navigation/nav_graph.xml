@@ -7,22 +7,55 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.newsblock.FirstFragment"
+        android:name="com.example.newsblock.scenes.menu.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment2"
+            app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.newsblock.SecondFragment"
+        android:name="com.example.newsblock.scenes.newsBlock.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_news"
+            app:destination="@id/news" />
+    </fragment>
+    <fragment
+        android:id="@+id/news"
+        android:name="com.example.newsblock.scenes.news.News"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_news_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <argument
+            android:name="title"
+            android:defaultValue="Title" />
+        <argument
+            android:name="annotation"
+            android:defaultValue="Annotation" />
+        <argument
+            android:name="type"
+            android:defaultValue="Type" />
+        <argument
+            android:name="date"
+            android:defaultValue="Date" />
+        <argument
+            android:name="img"
+            android:defaultValue="Img" />
+        <argument
+            android:name="mobileUrl"
+            android:defaultValue="Mobile url" />
     </fragment>
 </navigation>
